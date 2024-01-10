@@ -74,10 +74,10 @@ export default function App({ Component, pageProps }: AppProps) {
             bottom: 20,
             size: "medium",
             iconColor: "white",
-            customIconSrc: "https://cdn.discordapp.com/attachments/1083532452347269220/1193997275425411183/sanctuary-icon.png",
+            customIconSrc: "https://cdn.shopify.com/s/files/1/0693/4328/1426/files/moodmnky-flowise-react-icon-purple.svg",
           },
           chatWindow: {
-            welcomeMessage: "Welcome back Bobby. How can I be of service?",
+            welcomeMessage: "Welcome back Brother! How can I be of service?",
             backgroundColor: "#2F3437",
             height: 700,
             width: 400,
