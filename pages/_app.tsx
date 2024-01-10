@@ -87,13 +87,13 @@ export default function App({ Component, pageProps }: AppProps) {
               backgroundColor: "#2F3437",
               textColor: "#FFFFFF",
               showAvatar: true,
-              avatarSrc: "https://cdn.discordapp.com/attachments/1083532452347269220/1193997275425411183/sanctuary-icon.png",
+              avatarSrc: "https://cdn.discordapp.com/attachments/1083532452347269220/1194496342844776538/DALLE_2024-01-09_23.21.46_-_Design_an_esports_gaming_icon_of_a_futuristic_armored_ronin_samurai_named_Shen._The_icon_should_depict_Shen_with_only_the_lower_half_of_his_face_cov.png",
             },
             userMessage: {
               backgroundColor: "#37296F",
               textColor: "#ffffff",
               showAvatar: false,
-              avatarSrc: "https://cdn.discordapp.com/attachments/1083532452347269220/1193997275425411183/sanctuary-icon.png",
+              avatarSrc: "https://cdn.discordapp.com/attachments/1083532452347269220/1194496342844776538/DALLE_2024-01-09_23.21.46_-_Design_an_esports_gaming_icon_of_a_futuristic_armored_ronin_samurai_named_Shen._The_icon_should_depict_Shen_with_only_the_lower_half_of_his_face_cov.png",
             },
             textInput: {
               placeholder: "Type your question",
