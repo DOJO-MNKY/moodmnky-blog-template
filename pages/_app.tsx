@@ -2,6 +2,7 @@
 import * as React from 'react'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
+import { BubbleChat } from 'flowise-embed-react'; // Import BubbleChat
 
 import * as Fathom from 'fathom-client'
 // used for rendering equations (optional)
@@ -61,5 +62,51 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <BubbleChat
+        chatflowid="e53b387d-188e-4975-bbe4-561745c9d098"
+        apiHost="https://flowise-studio.moodmnky.com"
+        theme={{
+          button: {
+            backgroundColor: "#37296F",
+            right: 20,
+            bottom: 20,
+            size: "medium",
+            iconColor: "white",
+            customIconSrc: "https://cdn.discordapp.com/attachments/1083532452347269220/1193997275425411183/sanctuary-icon.png",
+          },
+          chatWindow: {
+            welcomeMessage: "Welcome back Bobby. How can I be of service?",
+            backgroundColor: "#2F3437",
+            height: 700,
+            width: 400,
+            fontSize: 16,
+            poweredByTextColor: "#2F3437",
+            botMessage: {
+              backgroundColor: "#2F3437",
+              textColor: "#FFFFFF",
+              showAvatar: true,
+              avatarSrc: "https://cdn.discordapp.com/attachments/1083532452347269220/1193997275425411183/sanctuary-icon.png",
+            },
+            userMessage: {
+              backgroundColor: "#37296F",
+              textColor: "#ffffff",
+              showAvatar: false,
+              avatarSrc: "https://cdn.discordapp.com/attachments/1083532452347269220/1193997275425411183/sanctuary-icon.png",
+            },
+            textInput: {
+              placeholder: "Type your question",
+              backgroundColor: "#2F3437",
+              textColor: "#ffffff",
+              sendButtonColor: "#37296F",
+            }
+          }
+        }}
+      />
+  <Component {...pageProps} />
+  </>
+  );
 }
+
+  
